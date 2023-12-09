@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <h1 class="text-center mb-3 mt-4">Inventory Management System</h1>
+    <div class="container p-5 bg-info mt-4">
+      <div class="productInupt mb-3">
+        <label>Product Name</label>
+        <input id="productName" type="text" class="form-control" />
+        <div id="nameAlert" class="alert alert-danger d-none">
+          Product Name must start with capital letter followed by small letters
+          ranging from 3 to 8 characters
+        </div>
+      </div>
+
+      <div class="productInupt mb-3">
+        <label>Product Price</label>
+        <input id="productPrice" type="text" class="form-control" />
+      </div>
+
+      <div class="productInupt mb-3">
+        <label>Product Category</label>
+        <input id="productCategory" type="text" class="form-control" />
+      </div>
+
+      <div class="productInupt mb-3">
+        <label>Product Description</label>
+        <textarea id="productDescription" class="form-control"></textarea>
+      </div>
+
+      <button id="btnAdd" class="btn btn-primary">Add Product</button>
+      <button id="btnUpdate" class="btn btn-danger">Update info</button>
+
+      <input
+        id="search"
+        class="form-control mt-5 mb-5 w-75 m-auto"
+        placeholder="Search by name ..."
+      />
+      <table class="table bg-info text-center mt-3 table-striped">
+        <thead>
+          <tr>
+            <th>Item NO.</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
